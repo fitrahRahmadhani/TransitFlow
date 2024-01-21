@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.display-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.2%; /* 79.92px */
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.2%; /* 79.92px */
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.2%; /* 53.28px */
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 129.7%; /* 38.91px */
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 129.7%; /* 32.425px */
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 129.7%; /* 25.94px */
+  text-transform: capitalize;
+  color: #1c1f35;
+}
+
+p {
+  font-family: "Krub", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 151.523%; /* 24.244px */
+  color: #666c89;
+}
+
+/* Start Header */
+header {
+  background-color: #091242;
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+header .logo-header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-header img {
+  height: 36px;
+}
+header .logo-header .address-bar {
+  display: flex;
+}
+header .logo-header .address-bar .time, header .logo-header .address-bar .email, header .logo-header .address-bar .call {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 20px;
+}
+header .logo-header .address-bar div img {
+  display: inline-block;
+  width: 63px;
+  height: 63px;
+}
+header .logo-header .address-bar P {
+  color: #fff;
+}
+
+/* End Header *//*# sourceMappingURL=style.css.map */
