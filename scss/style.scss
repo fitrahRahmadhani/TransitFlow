@@ -44,7 +44,7 @@ h3 {
   text-transform: capitalize;
   color: $heading-font-color;
 }
-h4{
+h4 {
   font-family: "Rubik", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -53,7 +53,7 @@ h4{
   text-transform: capitalize;
   color: $heading-font-color;
 }
-h5{
+h5 {
   font-family: "Rubik", sans-serif;
   font-size: 25px;
   font-style: normal;
@@ -62,7 +62,7 @@ h5{
   text-transform: capitalize;
   color: $heading-font-color;
 }
-h6{
+h6 {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -71,7 +71,7 @@ h6{
   text-transform: capitalize;
   color: $heading-font-color;
 }
-p{
+p {
   font-family: "Krub", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -80,38 +80,101 @@ p{
   color: $paragraph-font-color;
 }
 
-/* Start Header */
-header{
+// Start Header
+header {
   background-color: $primary2-color;
   height: 160px;
   display: flex;
   align-items: center;
-  .logo-header{
+  .logo-header {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+    img {
       height: 36px;
     }
-    .address-bar{
+    .address-bar {
       display: flex;
-      .time,.email,.call{
+      .time,
+      .email,
+      .call {
         display: flex;
         align-items: center;
-        gap:17px;
+        gap: 17px;
         padding: 20px;
       }
-      div img{
+      div img {
         display: inline-block;
         width: 63px;
         height: 63px;
       }
-      P{
+      P {
         color: #fff;
       }
     }
   }
 }
-/* End Header */
+// End Header
+
+// Start Nav
+nav {
+  background-color: rgba(9, 18, 66, 0.25);
+  display: flex;
+  .nav-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu li {
+      list-style: none;
+      display: inline-block;
+      border-right: 1px solid rgba(255, 255, 255, 0.20);;
+      &:last-child{
+        border-right: none
+      }
+      a {
+        padding: 24px 14px;
+        color: #fff;
+        font-family: "Krub", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 135.023%; /* 21.604px */
+        text-decoration: none;
+        &:hover{
+          border-bottom: 2px solid #fff;
+        }
+      }
+    }
+    .follow-container{
+      display: flex;
+      align-items: center;
+      width: 30%;
+      justify-content: end;
+      .follow{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-right: 50px;
+      }
+      button {
+        display: flex;
+        padding: 28px 52px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #23212a;
+        font-family: "Krub", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 135.023%; /* 21.604px */
+        border: none;
+      }
+    }
+  }
+}
+// End Nav
