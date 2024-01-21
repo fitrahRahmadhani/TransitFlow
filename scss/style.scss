@@ -4,6 +4,19 @@ $secondary1-color: #f4f4f4;
 $heading-font-color: #1c1f35;
 $paragraph-font-color: #666c89;
 
+.sub-text {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 4px 9px;
+  background-color: rgba(4, 28, 55, 0.5);
+  border-left: 2px solid $primary1-color;
+  width: fit-content;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +28,7 @@ $paragraph-font-color: #666c89;
   font-weight: 700;
   line-height: 133.2%; /* 79.92px */
   text-transform: capitalize;
-  color: $heading-font-color;
+  color: #fff;
 }
 h1 {
   font-family: "Rubik", sans-serif;
@@ -120,8 +133,8 @@ header {
 
 // Start Nav
 nav {
-  background-color: rgba(9, 18, 66, 0.25);
   display: flex;
+  background-color: rgba(9, 18, 66, 0.25);
   .nav-container {
     width: 80%;
     margin: auto;
@@ -131,9 +144,9 @@ nav {
     .menu li {
       list-style: none;
       display: inline-block;
-      border-right: 1px solid rgba(255, 255, 255, 0.20);;
-      &:last-child{
-        border-right: none
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      &:last-child {
+        border-right: none;
       }
       a {
         padding: 24px 14px;
@@ -144,17 +157,17 @@ nav {
         font-weight: 600;
         line-height: 135.023%; /* 21.604px */
         text-decoration: none;
-        &:hover{
+        &:hover {
           border-bottom: 2px solid #fff;
         }
       }
     }
-    .follow-container{
+    .follow-container {
       display: flex;
       align-items: center;
       width: 30%;
       justify-content: end;
-      .follow{
+      .follow {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
@@ -178,3 +191,59 @@ nav {
   }
 }
 // End Nav
+
+// Start Hero
+main {
+  #hero {
+    width: 100%;
+    height: 59vh;
+    img {
+      z-index: -1;
+      width: 100%;
+      height: 85vh;
+      object-fit: cover;
+      position: absolute;
+      top: 140px;
+    }
+    .text-container {
+      width: 80%;
+      height: 58vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px;
+      h1 {
+        width: 50%;
+      }
+      p {
+        width: 50%;
+        color: #fff;
+        &:first-child{
+          width: fit-content;
+        }
+      }
+      button {
+        display: flex;
+        padding: 19px 34px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          94deg,
+          #ffb629 -1.21%,
+          #ffda56 58.66%,
+          #ffd7a6 116.84%
+        );
+        color: $heading-font-color;
+        font-family: Krub;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 135.023%; /* 21.604px */
+        border: none;
+      }
+    }
+  }
+}
+// End Hero
