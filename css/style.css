@@ -193,7 +193,6 @@ nav .nav-container .follow-container button {
 main #hero {
   width: 100%;
   height: 80vh;
-  background-color: #091242;
 }
 main #hero img {
   z-index: -1;
@@ -261,4 +260,72 @@ main #services .content .services-content {
 main #services .content .services-content img {
   padding-right: 20px;
   border-right: 1px solid #D8D8D8;
+}
+main #about {
+  width: 100%;
+}
+main #about img {
+  width: 100%;
+  object-fit: cover;
+}
+main #about .about-content {
+  width: 80%;
+  margin: auto;
+  padding: 66px;
+  box-sizing: border-box;
+  position: relative;
+  top: -100px;
+  background-color: #fff;
+  display: grid;
+  grid-template-areas: "heading content" "about-counter about-counter";
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+main #about .about-content .about-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+main #about .about-content .about-heading .about-icon-container {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-areas: "icon content" "icon content";
+  row-gap: 22px;
+  column-gap: 15px;
+}
+main #about .about-content .about-heading .about-icon-container img {
+  width: 58px;
+  height: auto;
+  place-self: center;
+}
+main #about .about-content .about-heading .about-icon-container h6 {
+  place-self: center start;
+}
+main #about .about-image {
+  width: 100%;
+  height: 100%;
+}
+main #about .about-image img {
+  height: 100%;
+  object-fit: cover;
+}
+main #about .about-counter {
+  grid-area: about-counter;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+}
+main #about .about-counter .about-counter-1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  border-right: 1px solid #D4D4D4;
+}
+main #about .about-counter .about-counter-2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
 }/*# sourceMappingURL=style.css.map */
