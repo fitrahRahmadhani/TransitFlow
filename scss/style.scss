@@ -196,11 +196,13 @@ nav {
 main {
   #hero {
     width: 100%;
-    height: 59vh;
+    height: 80vh;
+    background-color: #091242;
+    
     img {
       z-index: -1;
       width: 100%;
-      height: 85vh;
+      height: 80vh;
       object-fit: cover;
       position: absolute;
       top: 140px;
@@ -242,6 +244,31 @@ main {
         font-weight: 600;
         line-height: 135.023%; /* 21.604px */
         border: none;
+      }
+    }
+  }
+  #services{
+    width: 80%;
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-areas: "header content";
+    .header{
+      grid-area: 'header';
+    }
+    .content{
+      grid-area: 'content';
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      gap: 83px;
+      .services-content{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        img{
+          padding-right: 20px;
+          border-right: 1px solid #D8D8D8;
+        }
       }
     }
   }
