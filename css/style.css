@@ -332,6 +332,7 @@ main #about .about-counter .about-counter-2 {
 main #project {
   padding: 100px auto;
   position: relative;
+  margin-bottom: 150px;
 }
 main #project .project-content {
   width: 90%;
@@ -379,7 +380,7 @@ main #project .project-content .project-content-card .project-content-card-text-
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 151.523%; /* 24.244px */
+  line-height: 151.523%;
 }
 main #project .project-content::after {
   content: "";
@@ -392,4 +393,73 @@ main #project .project-content::after {
   left: 0;
   right: 0;
   bottom: -150px;
+}
+main #testimonial {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 150px;
+}
+main #testimonial .testimonial-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #testimonial .testimonial-header .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+main #testimonial .testimonial-header .arrow-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #testimonial .testimonial-header .arrow-container .arrow-container-back {
+  padding: 18px;
+  border-radius: 50px;
+  background-image: linear-gradient(95deg, #FFB629 -1.19%, #FFDA56 57.78%, #FFD7A6 115.08%);
+}
+main #testimonial .testimonial-header .arrow-container .arrow-container-forward {
+  padding: 18px;
+  border-radius: 50px;
+  background-color: #091242;
+  color: white;
+}
+main #testimonial .testimonial-content {
+  width: 100%;
+  display: flex;
+}
+main #testimonial .testimonial-content .testimonial-content-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 62px 72px;
+  box-sizing: border-box;
+  gap: 24px;
+  background-color: #f4f4f4;
+}
+main #testimonial .testimonial-content .testimonial-content-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #testimonial .testimonial-content .testimonial-content-card .card-header .card-profile {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+main #testimonial .testimonial-content .testimonial-content-card .card-header .card-profile img {
+  border-radius: 50px;
+}
+main #testimonial .testimonial-content .testimonial-content-card:last-child {
+  background-color: #091242;
+}
+main #testimonial .testimonial-content .testimonial-content-card:last-child .card-header h6, main #testimonial .testimonial-content .testimonial-content-card:last-child .card-header p {
+  color: #fff;
+}
+main #testimonial .testimonial-content .testimonial-content-card:last-child p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
