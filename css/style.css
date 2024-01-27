@@ -462,4 +462,60 @@ main #testimonial .testimonial-content .testimonial-content-card:last-child .car
 }
 main #testimonial .testimonial-content .testimonial-content-card:last-child p {
   color: #fff;
+}
+main #why-choose {
+  background: linear-gradient(to right, #091242 0%, #091242 50%, #F4F4F4 50%, #F4F4F4 100%);
+  padding: 150px 0PX;
+  box-sizing: border-box;
+}
+main #why-choose .why-choose-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+}
+main #why-choose .why-choose-container .container-left {
+  width: 929px;
+  height: 610px;
+  position: relative;
+}
+main #why-choose .why-choose-container .container-left .container-left-text {
+  position: absolute;
+  background-image: linear-gradient(94deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+  display: flex;
+  width: 417px;
+  height: 139px;
+  gap: 21px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main #why-choose .why-choose-container .container-left .container-left-text h6 {
+  width: 260px;
+}
+main #why-choose .why-choose-container .container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+main #why-choose .why-choose-container .container-right .container-right-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main #why-choose .why-choose-container .container-right .container-right-header p {
+  width: 486px;
+}
+main #why-choose .why-choose-container .container-right .container-right-header p:first-child {
+  width: fit-content;
+}
+main #why-choose .why-choose-container .container-right .container-right-features {
+  display: grid;
+  grid-template-columns: min-content auto min-content auto;
+  gap: 20px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
