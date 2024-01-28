@@ -190,11 +190,11 @@ nav .nav-container .follow-container button {
   border: none;
 }
 
-main #hero {
+#hero {
   width: 100%;
   height: 80vh;
 }
-main #hero img {
+#hero img {
   z-index: -1;
   width: 100%;
   height: 80vh;
@@ -202,7 +202,7 @@ main #hero img {
   position: absolute;
   top: 140px;
 }
-main #hero .text-container {
+#hero .text-container {
   width: 80%;
   height: 58vh;
   margin: auto;
@@ -212,17 +212,17 @@ main #hero .text-container {
   justify-content: center;
   gap: 20px;
 }
-main #hero .text-container h1 {
+#hero .text-container h1 {
   width: 50%;
 }
-main #hero .text-container p {
+#hero .text-container p {
   width: 50%;
   color: #fff;
 }
-main #hero .text-container p:first-child {
+#hero .text-container p:first-child {
   width: fit-content;
 }
-main #hero .text-container button {
+#hero .text-container button {
   display: flex;
   padding: 19px 34px;
   justify-content: center;
@@ -236,39 +236,41 @@ main #hero .text-container button {
   line-height: 135.023%; /* 21.604px */
   border: none;
 }
-main #services {
+
+#services {
   width: 80%;
   margin: 200px auto;
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   grid-template-areas: "header content";
 }
-main #services .header {
+#services .header {
   grid-area: "header";
 }
-main #services .content {
+#services .content {
   grid-area: "content";
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
   gap: 83px;
 }
-main #services .content .services-content {
+#services .content .services-content {
   display: flex;
   align-items: flex-start;
   gap: 20px;
 }
-main #services .content .services-content img {
+#services .content .services-content img {
   padding-right: 20px;
-  border-right: 1px solid #D8D8D8;
+  border-right: 1px solid #d8d8d8;
 }
-main #about {
+
+#about {
   width: 100%;
 }
-main #about img {
+#about img {
   width: 100%;
   object-fit: cover;
 }
-main #about .about-content {
+#about .about-content {
   width: 80%;
   margin: auto;
   padding: 66px;
@@ -281,60 +283,61 @@ main #about .about-content {
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
 }
-main #about .about-content .about-heading {
+#about .about-content .about-heading {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-main #about .about-content .about-heading .about-icon-container {
+#about .about-content .about-heading .about-icon-container {
   display: grid;
   grid-template-columns: min-content auto;
   grid-template-areas: "icon content" "icon content";
   row-gap: 22px;
   column-gap: 15px;
 }
-main #about .about-content .about-heading .about-icon-container img {
+#about .about-content .about-heading .about-icon-container img {
   width: 58px;
   height: auto;
   place-self: center;
 }
-main #about .about-content .about-heading .about-icon-container h6 {
+#about .about-content .about-heading .about-icon-container h6 {
   place-self: center start;
 }
-main #about .about-image {
+#about .about-image {
   width: 100%;
   height: 100%;
 }
-main #about .about-image img {
+#about .about-image img {
   height: 100%;
   object-fit: cover;
 }
-main #about .about-counter {
+#about .about-counter {
   grid-area: about-counter;
   display: flex;
   justify-content: center;
-  border-top: 1px solid #D4D4D4;
-  border-bottom: 1px solid #D4D4D4;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
 }
-main #about .about-counter .about-counter-1 {
+#about .about-counter .about-counter-1 {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 20px 40px;
-  border-right: 1px solid #D4D4D4;
+  border-right: 1px solid #d4d4d4;
 }
-main #about .about-counter .about-counter-2 {
+#about .about-counter .about-counter-2 {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 20px 40px;
 }
-main #project {
+
+#project {
   padding: 100px auto;
   position: relative;
   margin-bottom: 150px;
 }
-main #project .project-content {
+#project .project-content {
   width: 90%;
   margin: auto;
   display: grid;
@@ -342,49 +345,49 @@ main #project .project-content {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
-main #project .project-content h1 {
+#project .project-content h1 {
   grid-area: heading;
   text-align: center;
   margin-bottom: 20px;
 }
-main #project .project-content .project-content-card {
+#project .project-content .project-content-card {
   width: 100%;
   height: 450px;
   background-image: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%);
   position: relative;
 }
-main #project .project-content .project-content-card img {
+#project .project-content .project-content-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   z-index: -1;
 }
-main #project .project-content .project-content-card .project-content-card-text-container {
+#project .project-content .project-content-card .project-content-card-text-container {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px;
 }
-main #project .project-content .project-content-card .project-content-card-text-container h6 {
-  color: #FFF;
+#project .project-content .project-content-card .project-content-card-text-container h6 {
+  color: #fff;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-main #project .project-content .project-content-card .project-content-card-text-container p {
-  color: #FFB629;
+#project .project-content .project-content-card .project-content-card-text-container p {
+  color: #ffb629;
   font-family: "Krub", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 151.523%;
 }
-main #project .project-content::after {
+#project .project-content::after {
   content: "";
-  background-image: linear-gradient(95deg, #FFB629 -1.19%, #FFDA56 57.78%, #FFD7A6 115.08%);
+  background-image: linear-gradient(95deg, #ffb629 -1.19%, #ffda56 57.78%, #ffd7a6 115.08%);
   width: 100%;
   height: 400px;
   display: block;
@@ -394,7 +397,8 @@ main #project .project-content::after {
   right: 0;
   bottom: -150px;
 }
-main #testimonial {
+
+#testimonial {
   width: 80%;
   margin: auto;
   display: flex;
@@ -402,37 +406,37 @@ main #testimonial {
   gap: 32px;
   padding: 150px;
 }
-main #testimonial .testimonial-header {
+#testimonial .testimonial-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-main #testimonial .testimonial-header .text-container {
+#testimonial .testimonial-header .text-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-main #testimonial .testimonial-header .arrow-container {
+#testimonial .testimonial-header .arrow-container {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-main #testimonial .testimonial-header .arrow-container .arrow-container-back {
+#testimonial .testimonial-header .arrow-container .arrow-container-back {
   padding: 18px;
   border-radius: 50px;
-  background-image: linear-gradient(95deg, #FFB629 -1.19%, #FFDA56 57.78%, #FFD7A6 115.08%);
+  background-image: linear-gradient(95deg, #ffb629 -1.19%, #ffda56 57.78%, #ffd7a6 115.08%);
 }
-main #testimonial .testimonial-header .arrow-container .arrow-container-forward {
+#testimonial .testimonial-header .arrow-container .arrow-container-forward {
   padding: 18px;
   border-radius: 50px;
   background-color: #091242;
   color: white;
 }
-main #testimonial .testimonial-content {
+#testimonial .testimonial-content {
   width: 100%;
   display: flex;
 }
-main #testimonial .testimonial-content .testimonial-content-card {
+#testimonial .testimonial-content .testimonial-content-card {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -441,47 +445,49 @@ main #testimonial .testimonial-content .testimonial-content-card {
   gap: 24px;
   background-color: #f4f4f4;
 }
-main #testimonial .testimonial-content .testimonial-content-card .card-header {
+#testimonial .testimonial-content .testimonial-content-card .card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main #testimonial .testimonial-content .testimonial-content-card .card-header .card-profile {
+#testimonial .testimonial-content .testimonial-content-card .card-header .card-profile {
   display: flex;
   gap: 14px;
   align-items: center;
 }
-main #testimonial .testimonial-content .testimonial-content-card .card-header .card-profile img {
+#testimonial .testimonial-content .testimonial-content-card .card-header .card-profile img {
   border-radius: 50px;
 }
-main #testimonial .testimonial-content .testimonial-content-card:last-child {
+#testimonial .testimonial-content .testimonial-content-card:last-child {
   background-color: #091242;
 }
-main #testimonial .testimonial-content .testimonial-content-card:last-child .card-header h6, main #testimonial .testimonial-content .testimonial-content-card:last-child .card-header p {
+#testimonial .testimonial-content .testimonial-content-card:last-child .card-header h6,
+#testimonial .testimonial-content .testimonial-content-card:last-child .card-header p {
   color: #fff;
 }
-main #testimonial .testimonial-content .testimonial-content-card:last-child p {
+#testimonial .testimonial-content .testimonial-content-card:last-child p {
   color: #fff;
 }
-main #why-choose {
-  background: linear-gradient(to right, #091242 0%, #091242 50%, #F4F4F4 50%, #F4F4F4 100%);
-  padding: 150px 0PX;
+
+#why-choose {
+  background: linear-gradient(to right, #091242 0%, #091242 50%, #f4f4f4 50%, #f4f4f4 100%);
+  padding: 150px 0px;
   box-sizing: border-box;
 }
-main #why-choose .why-choose-container {
+#why-choose .why-choose-container {
   width: 90%;
   margin: auto;
   display: flex;
   gap: 80px;
 }
-main #why-choose .why-choose-container .container-left {
+#why-choose .why-choose-container .container-left {
   width: 929px;
   height: 610px;
   position: relative;
 }
-main #why-choose .why-choose-container .container-left .container-left-text {
+#why-choose .why-choose-container .container-left .container-left-text {
   position: absolute;
-  background-image: linear-gradient(94deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+  background-image: linear-gradient(94deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
   display: flex;
   width: 417px;
   height: 139px;
@@ -494,28 +500,84 @@ main #why-choose .why-choose-container .container-left .container-left-text {
   right: 0;
   bottom: 0;
 }
-main #why-choose .why-choose-container .container-left .container-left-text h6 {
+#why-choose .why-choose-container .container-left .container-left-text h6 {
   width: 260px;
 }
-main #why-choose .why-choose-container .container-right {
+#why-choose .why-choose-container .container-right {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-main #why-choose .why-choose-container .container-right .container-right-header {
+#why-choose .why-choose-container .container-right .container-right-header {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-main #why-choose .why-choose-container .container-right .container-right-header p {
+#why-choose .why-choose-container .container-right .container-right-header p {
   width: 486px;
 }
-main #why-choose .why-choose-container .container-right .container-right-header p:first-child {
+#why-choose .why-choose-container .container-right .container-right-header p:first-child {
   width: fit-content;
 }
-main #why-choose .why-choose-container .container-right .container-right-features {
+#why-choose .why-choose-container .container-right .container-right-features {
   display: grid;
   grid-template-columns: min-content auto min-content auto;
   gap: 20px;
   align-items: center;
+}
+
+#team {
+  width: 80%;
+  margin: auto;
+  padding: 150px 0px;
+  box-sizing: border-box;
+}
+#team .team-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+#team .team-container .team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+#team .team-container .team-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+#team .team-container .team-content .team-user {
+  width: 100%;
+  position: relative;
+  background-color: #091242;
+}
+#team .team-container .team-content .team-user img {
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+}
+#team .team-container .team-content .team-user .user-text {
+  margin-top: 20px;
+  padding: 24px 28px;
+  box-sizing: border-box;
+}
+#team .team-container .team-content .team-user .user-text h6, #team .team-container .team-content .team-user .user-text p {
+  color: #fff;
+}
+#team .team-container .team-content .team-user .team-user-social {
+  display: flex;
+  width: fit-content;
+  padding: 20px 18px;
+  gap: 20px;
+  background-image: linear-gradient(94deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+}
+#team .team-container .team-content .team-user .team-user-social img {
+  width: 23.083px;
+  height: 21.491px;
 }/*# sourceMappingURL=style.css.map */
