@@ -84,7 +84,7 @@ h6 {
   text-transform: capitalize;
   color: $heading-font-color;
 }
-p {
+p,li {
   font-family: "Krub", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -678,7 +678,7 @@ nav {
             #ffd7a6 116.84%
           );
           color: $heading-font-color;
-          font-family: Krub;
+          font-family: 'Krub', sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 600;
@@ -730,8 +730,193 @@ nav {
           width: 100%;
           display: block;
           position: absolute;
-          z-index:1;
+          z-index: 1;
           bottom: 0;
+        }
+      }
+    }
+  }
+}
+#blog {
+  width: 80%;
+  margin: auto;
+  padding: 150px 0px;
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 66px 0px;
+    box-sizing: border-box;
+    align-items: center;
+    .blog-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .blog-card-wrapper {
+      .blog-card {
+        display: flex;
+        gap: 40px;
+        padding: 32px 20px;
+        box-sizing: border-box;
+        border-top: 1px solid #d6d6d6;
+        .blog-card-image {
+          width: 453px;
+          height: 308px;
+          position: relative;
+          img {
+            opacity: 1;
+            display: block;
+            transition: 0.5s ease;
+            backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .middle-hover {
+            transition: 0.5s ease;
+            opacity: 0;
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            p {
+              color: #fff;
+              font-size: 22px;
+            }
+          }
+          &:hover .middle-hover {
+            opacity: 1;
+          }
+        }
+        .blog-card-date {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .blog-card-content {
+          border-left: 1px solid #d6d6d6;
+          padding: 0px 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          ul {
+            list-style: none;
+            font-family: "Krub", sans-serif;
+            line-height: 166.5%;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            color: $heading-font-color;
+          }
+        }
+        &:last-child {
+          border-bottom: 1px solid #d6d6d6;
+        }
+      }
+    }
+    button {
+      width: fit-content;
+      padding: 20px 35px;
+      background-color: $primary2-color;
+      color: #fff;
+      font-family: Krub;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 135.023%; /* 21.604px */
+      border: none;
+    }
+  }
+}
+
+#footer{
+  background-color: $primary2-color;
+  &>img{
+    width: 100%;
+  }
+  .footer-container{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+    .footer-header{
+      padding-bottom: 40px;
+    }
+    .footer-content{
+      display: grid;
+      grid-template-columns: 2fr min-content min-content 2fr;
+      justify-content: space-between;
+      gap: 100px;
+      .footer-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .footer-icon{
+          display: grid;
+          grid-template-columns: min-content auto;
+          gap: 20px;
+        }
+      }
+      .footer-pages, .footer-utility{
+        h5{
+          color: $paragraph-font-color;
+          margin-bottom: 20px;
+        }
+        ul{
+          list-style: none;
+          color: $paragraph-font-color;
+        }
+        
+      }
+      .footer-subscribe{
+        h5{
+          color: $paragraph-font-color;
+          margin-bottom: 20px;
+        }
+        input{
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+          background-color: $primary2-color;
+          border: 1px solid $paragraph-font-color;
+          font-family: "Krub", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 151.523%; /* 24.244px */
+          color: #fff;
+        }
+        button{
+          display: inline;
+          margin: 20px 20px 0px 0px;
+          width: max-content;
+          padding: 16px 20px;
+          background-image: linear-gradient(
+            94deg,
+            #ffb629 -1.21%,
+            #ffda56 58.66%,
+            #ffd7a6 116.84%
+          );
+          color: $heading-font-color;
+          font-family: 'Krub', sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 135.023%; /* 21.604px */
+          border: none;
+        }
+        .follow{
+          display: inline;
+          *{
+            margin-right: 8px;
+          }
         }
       }
     }
