@@ -921,4 +921,20 @@ nav {
       }
     }
   }
+  .footer-copyright{
+    border-top: 1px solid $paragraph-font-color;
+    .footer-copyright-container{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
 }

@@ -867,4 +867,20 @@ nav .nav-container .follow-container button {
 }
 #footer .footer-container .footer-content .footer-subscribe .follow * {
   margin-right: 8px;
+}
+#footer .footer-copyright {
+  border-top: 1px solid #666c89;
+}
+#footer .footer-copyright .footer-copyright-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+#footer .footer-copyright .footer-copyright-container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
